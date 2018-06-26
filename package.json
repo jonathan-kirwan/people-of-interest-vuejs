@@ -17,6 +17,7 @@
     "bulma": "^0.7.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3",
+    "typeface-roboto": "0.0.54",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {

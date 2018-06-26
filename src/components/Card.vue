@@ -1,8 +1,10 @@
 <template>
-  <div class='column is-6 has-background-primary'>
+  <div class="column is-half-tablet">
+  <div class='has-background-info'>
+    <div class="column">
     <div class='level'>
         <div class='tile is-child is-4 has-text-centered-mobile has-text-left-tablet'>
-            <img :alt="`${name} profile picture`" :src="`./assets/${avatar}`">
+            <img :alt="`${name} profile picture`" :src="require('./../assets/' + avatar)">
         </div>
         <div class='tile is-vertical is-8 is-parent has-text-centered-mobile has-text-left-tablet'>
             <header>
@@ -15,12 +17,14 @@
             </div>
         </div>
     </div>
+    </div>
+  </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Card",
+  name: "card",
   props: {
     name: String,
     phone: String,
